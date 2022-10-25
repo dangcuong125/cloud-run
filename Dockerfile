@@ -5,6 +5,10 @@ WORKDIR /app
 
 COPY . ./
 
+RUN yarn
+
+RUN yarn build
+
 # ---
 FROM fholzer/nginx-brotli:v1.12.2
 
